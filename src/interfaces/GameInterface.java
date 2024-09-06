@@ -6,10 +6,12 @@ import java.awt.*;
 import java.awt.event.*;
 import java.io.File;
 import java.util.List;
-
 import src.controllers.Features;
 import src.utils.GameLogic;
 
+/**
+ * Classe responsável pela interface gráfica do jogo.
+ */
 public class GameInterface extends JFrame {
   private static final int WINDOW_WIDTH = 1200;
   private static final int WINDOW_HEIGHT = 750;
@@ -28,14 +30,21 @@ public class GameInterface extends JFrame {
   private JLabel questionLabel;
   private JButton yesButton;
   private JButton noButton;
-
   private GameLogic gameLogic;
 
+  /**
+   * Construtor da interface do jogo.
+   * 
+   * @param characters Lista de personagens para o jogo
+   */
   public GameInterface(List<Features> characters) {
     this.gameLogic = new GameLogic(characters);
     initializeUI();
   }
 
+  /**
+   * Inicializa a interface do usuário.
+   */
   private void initializeUI() {
     setTitle(TITLE);
     setSize(WINDOW_WIDTH, WINDOW_HEIGHT);
@@ -45,6 +54,11 @@ public class GameInterface extends JFrame {
     setVisible(true);
   }
 
+  /**
+   * Cria o painel principal da interface.
+   * 
+   * @return JPanel contendo os elementos principais da interface
+   */
   private JPanel createMainPanel() {
     mainPanel = new JPanel();
     mainPanel.setLayout(new BoxLayout(mainPanel, BoxLayout.Y_AXIS));
@@ -64,15 +78,30 @@ public class GameInterface extends JFrame {
     return mainPanel;
   }
 
+  /**
+   * Cria o rótulo do título do jogo.
+   * 
+   * @return JLabel com o título estilizado
+   */
   private JLabel createTitleLabel() {
     return createStyledLabel("MINI AKINATOR", TITLE_FONT, TEXT_COLOR);
   }
 
+  /**
+   * Cria o rótulo do subtítulo do jogo.
+   * 
+   * @return JLabel com o subtítulo estilizado
+   */
   private JLabel createSubtitleLabel() {
     return createStyledLabel("Consigo adivinhar qualquer personagem em que você esteja pensando", SUBTITLE_FONT,
         Color.DARK_GRAY);
   }
 
+  /**
+   * Cria o rótulo com a imagem do jogo.
+   * 
+   * @return JLabel contendo a imagem do jogo
+   */
   private JLabel createImageLabel() {
     JLabel label = new JLabel();
     label.setAlignmentX(Component.CENTER_ALIGNMENT);
@@ -82,10 +111,23 @@ public class GameInterface extends JFrame {
     return label;
   }
 
+  /**
+   * Cria o botão de início do jogo.
+   * 
+   * @return JButton estilizado para iniciar o jogo
+   */
   private JButton createStartButton() {
     return createStyledButton("Topa o desafio?", BUTTON_COLOR, e -> startGame());
   }
 
+  /**
+   * Cria um rótulo estilizado com texto, fonte e cor personalizados.
+   * 
+   * @param text  Texto do rótulo
+   * @param font  Fonte a ser utilizada
+   * @param color Cor do texto
+   * @return JLabel estilizado
+   */
   private JLabel createStyledLabel(String text, Font font, Color color) {
     JLabel label = new JLabel(text, SwingConstants.CENTER);
     label.setFont(font);
@@ -94,6 +136,14 @@ public class GameInterface extends JFrame {
     return label;
   }
 
+  /**
+   * Cria um botão estilizado com texto, cor de fundo e ação personalizados.
+   * 
+   * @param text    Texto do botão
+   * @param bgColor Cor de fundo do botão
+   * @param action  Ação a ser executada quando o botão for clicado
+   * @return JButton estilizado
+   */
   private JButton createStyledButton(String text, Color bgColor, java.awt.event.ActionListener action) {
     JButton button = new JButton(text) {
       @Override
@@ -147,6 +197,9 @@ public class GameInterface extends JFrame {
     return button;
   }
 
+  /**
+   * Inicia um novo jogo.
+   */
   private void startGame() {
     gameLogic.resetGame();
     setContentPane(createGamePanel());
@@ -155,6 +208,11 @@ public class GameInterface extends JFrame {
     repaint();
   }
 
+  /**
+   * Cria o painel do jogo com a pergunta e botões de resposta.
+   * 
+   * @return JPanel contendo os elementos do jogo
+   */
   private JPanel createGamePanel() {
     JPanel panel = new JPanel(new BorderLayout(20, 20));
     panel.setBackground(BACKGROUND_COLOR);
@@ -172,6 +230,11 @@ public class GameInterface extends JFrame {
     return panel;
   }
 
+  /**
+   * Processa a resposta do jogador.
+   * 
+   * @param answer Resposta do jogador (true para Sim, false para Não)
+   */
   private void processAnswer(boolean answer) {
     gameLogic.processAnswer(answer);
     if (gameLogic.isGameOver()) {
@@ -181,6 +244,9 @@ public class GameInterface extends JFrame {
     }
   }
 
+  /**
+   * Faz a próxima pergunta ao jogador.
+   */
   private void askNextQuestion() {
     if (gameLogic.canAskMoreQuestions()) {
       String question = gameLogic.getNextQuestion();
@@ -190,6 +256,9 @@ public class GameInterface extends JFrame {
     }
   }
 
+  /**
+   * Mostra o resultado final do jogo.
+   */
   private void showResult() {
     JPanel resultPanel;
     if (gameLogic.hasDiscoveredCharacter()) {
@@ -210,6 +279,12 @@ public class GameInterface extends JFrame {
     repaint();
   }
 
+  /**
+   * Cria um painel com múltiplos personagens quando o jogo não consegue
+   * determinar um único personagem.
+   * 
+   * @return JPanel com a lista de personagens possíveis
+   */
   private JPanel createMultipleCharactersPanel() {
     JPanel panel = new JPanel();
     panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
@@ -256,6 +331,11 @@ public class GameInterface extends JFrame {
     return panel;
   }
 
+  /**
+   * Cria um painel mostrando o personagem descoberto.
+   * 
+   * @return JPanel com a imagem e nome do personagem descoberto
+   */
   private JPanel createDiscoveredCharacterPanel() {
     JPanel panel = new JPanel();
     panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
@@ -276,6 +356,11 @@ public class GameInterface extends JFrame {
     return panel;
   }
 
+  /**
+   * Cria um rótulo com a imagem do personagem descoberto.
+   * 
+   * @return JLabel contendo a imagem do personagem
+   */
   private JLabel createCharacterImageLabel() {
     String characterName = gameLogic.getDiscoveredCharacter().getName().toLowerCase();
     String[] possibleExtensions = { ".jpeg", ".jpg", ".png" };
@@ -305,6 +390,12 @@ public class GameInterface extends JFrame {
     return characterImageLabel;
   }
 
+  /**
+   * Cria um painel com os personagens restantes quando o jogo não consegue
+   * determinar um único personagem.
+   * 
+   * @return JPanel com a lista de personagens restantes
+   */
   private JPanel createRemainingCharactersPanel() {
     JPanel panel = new JPanel(new BorderLayout());
     panel.setBackground(BACKGROUND_COLOR);

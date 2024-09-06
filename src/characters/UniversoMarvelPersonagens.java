@@ -23,7 +23,7 @@ public class UniversoMarvelPersonagens {
                 homemDeFerro.addSpecificAttribute("capacete", true);
                 homemDeFerro.addSpecificAttribute("telepatia", false);
                 homemDeFerro.addSpecificAttribute("telecinese", false);
-                homemDeFerro.addSpecificAttribute("voo", true);
+                homemDeFerro.addSpecificAttribute("voar", true);
                 homemDeFerro.addSpecificAttribute("absorverEnergia", true);
                 homemDeFerro.addSpecificAttribute("inteligenciaArtificial", true);
                 homemDeFerro.addSpecificAttribute("manipulacaoRealidade", false);
@@ -59,7 +59,7 @@ public class UniversoMarvelPersonagens {
                 capitaoAmerica.addSpecificAttribute("capacete", false);
                 capitaoAmerica.addSpecificAttribute("telepatia", false);
                 capitaoAmerica.addSpecificAttribute("telecinese", false);
-                capitaoAmerica.addSpecificAttribute("voo", false);
+                capitaoAmerica.addSpecificAttribute("voar", false);
                 capitaoAmerica.addSpecificAttribute("absorverEnergia", false);
                 capitaoAmerica.addSpecificAttribute("inteligenciaArtificial", false);
                 capitaoAmerica.addSpecificAttribute("manipulacaoRealidade", false);
@@ -94,7 +94,7 @@ public class UniversoMarvelPersonagens {
                 thor.addSpecificAttribute("capacete", true);
                 thor.addSpecificAttribute("telepatia", false);
                 thor.addSpecificAttribute("telecinese", false);
-                thor.addSpecificAttribute("voo", true);
+                thor.addSpecificAttribute("voar", true);
                 thor.addSpecificAttribute("absorverEnergia", true);
                 thor.addSpecificAttribute("inteligenciaArtificial", false);
                 thor.addSpecificAttribute("manipulacaoRealidade", false);
@@ -129,7 +129,7 @@ public class UniversoMarvelPersonagens {
                 hulk.addSpecificAttribute("capacete", false);
                 hulk.addSpecificAttribute("telepatia", false);
                 hulk.addSpecificAttribute("telecinese", false);
-                hulk.addSpecificAttribute("voo", false);
+                hulk.addSpecificAttribute("voar", false);
                 hulk.addSpecificAttribute("absorverEnergia", false);
                 hulk.addSpecificAttribute("inteligenciaArtificial", false);
                 hulk.addSpecificAttribute("manipulacaoRealidade", false);
@@ -165,7 +165,7 @@ public class UniversoMarvelPersonagens {
                 viuvaNegra.addSpecificAttribute("capacete", false);
                 viuvaNegra.addSpecificAttribute("telepatia", false);
                 viuvaNegra.addSpecificAttribute("telecinese", false);
-                viuvaNegra.addSpecificAttribute("voo", false);
+                viuvaNegra.addSpecificAttribute("voar", false);
                 viuvaNegra.addSpecificAttribute("absorverEnergia", false);
                 viuvaNegra.addSpecificAttribute("inteligenciaArtificial", false);
                 viuvaNegra.addSpecificAttribute("manipulacaoRealidade", false);
@@ -201,7 +201,7 @@ public class UniversoMarvelPersonagens {
                 gaviaoArqueiro.addSpecificAttribute("capacete", false);
                 gaviaoArqueiro.addSpecificAttribute("telepatia", false);
                 gaviaoArqueiro.addSpecificAttribute("telecinese", false);
-                gaviaoArqueiro.addSpecificAttribute("voo", false);
+                gaviaoArqueiro.addSpecificAttribute("voar", false);
                 gaviaoArqueiro.addSpecificAttribute("absorverEnergia", false);
                 gaviaoArqueiro.addSpecificAttribute("inteligenciaArtificial", false);
                 gaviaoArqueiro.addSpecificAttribute("manipulacaoRealidade", false);
@@ -238,7 +238,7 @@ public class UniversoMarvelPersonagens {
                 feiticeiraEscarlate.addSpecificAttribute("capacete", false);
                 feiticeiraEscarlate.addSpecificAttribute("telepatia", true);
                 feiticeiraEscarlate.addSpecificAttribute("telecinese", true);
-                feiticeiraEscarlate.addSpecificAttribute("voo", true);
+                feiticeiraEscarlate.addSpecificAttribute("voar", true);
                 feiticeiraEscarlate.addSpecificAttribute("absorverEnergia", false);
                 feiticeiraEscarlate.addSpecificAttribute("inteligenciaArtificial", false);
                 feiticeiraEscarlate.addSpecificAttribute("manipulacaoRealidade", true);
@@ -273,7 +273,7 @@ public class UniversoMarvelPersonagens {
                 visao.addSpecificAttribute("capacete", false);
                 visao.addSpecificAttribute("telepatia", true);
                 visao.addSpecificAttribute("telecinese", true);
-                visao.addSpecificAttribute("voo", true);
+                visao.addSpecificAttribute("voar", true);
                 visao.addSpecificAttribute("absorverEnergia", true);
                 visao.addSpecificAttribute("inteligenciaArtificial", true);
                 visao.addSpecificAttribute("manipulacaoRealidade", false);
@@ -308,7 +308,7 @@ public class UniversoMarvelPersonagens {
                 homemAranha.addSpecificAttribute("capacete", false);
                 homemAranha.addSpecificAttribute("telepatia", false);
                 homemAranha.addSpecificAttribute("telecinese", false);
-                homemAranha.addSpecificAttribute("voo", false);
+                homemAranha.addSpecificAttribute("voar", false);
                 homemAranha.addSpecificAttribute("absorverEnergia", false);
                 homemAranha.addSpecificAttribute("inteligenciaArtificial", false);
                 homemAranha.addSpecificAttribute("manipulacaoRealidade", false);
@@ -349,7 +349,7 @@ public class UniversoMarvelPersonagens {
                 panteraNegra.addSpecificAttribute("capacete", true);
                 panteraNegra.addSpecificAttribute("telepatia", false);
                 panteraNegra.addSpecificAttribute("telecinese", false);
-                panteraNegra.addSpecificAttribute("voo", false);
+                panteraNegra.addSpecificAttribute("voar", false);
                 panteraNegra.addSpecificAttribute("absorverEnergia", true);
                 panteraNegra.addSpecificAttribute("inteligenciaArtificial", true);
                 panteraNegra.addSpecificAttribute("manipulacaoRealidade", false);
@@ -364,7 +364,7 @@ public class UniversoMarvelPersonagens {
                 panteraNegra.addSpecificAttribute("combateCorpoACorpo", true);
                 panteraNegra.addSpecificAttribute("artesMarciais", true);
                 panteraNegra.addSpecificAttribute("forcaDivina", false);
-                panteraNegra.addSpecificAttribute("manipulacaoDeEnergia", false);
+                panteraNegra.addSpecificAttribute("manipulacaoDeEnergia", true);
                 panteraNegra.addSpecificAttribute("fazerFeitico", false);
                 panteraNegra.addSpecificAttribute("Maguinetismo", false);
 
@@ -384,7 +384,7 @@ public class UniversoMarvelPersonagens {
                 capitaMarvel.addSpecificAttribute("capacete", true);
                 capitaMarvel.addSpecificAttribute("telepatia", false);
                 capitaMarvel.addSpecificAttribute("telecinese", false);
-                capitaMarvel.addSpecificAttribute("voo", true);
+                capitaMarvel.addSpecificAttribute("voar", true);
                 capitaMarvel.addSpecificAttribute("absorverEnergia", true);
                 capitaMarvel.addSpecificAttribute("inteligenciaArtificial", false);
                 capitaMarvel.addSpecificAttribute("manipulacaoRealidade", false);
@@ -420,7 +420,7 @@ public class UniversoMarvelPersonagens {
                 maquinaDeCombate.addSpecificAttribute("capacete", true);
                 maquinaDeCombate.addSpecificAttribute("telepatia", false);
                 maquinaDeCombate.addSpecificAttribute("telecinese", false);
-                maquinaDeCombate.addSpecificAttribute("voo", true);
+                maquinaDeCombate.addSpecificAttribute("voar", true);
                 maquinaDeCombate.addSpecificAttribute("absorverEnergia", false);
                 maquinaDeCombate.addSpecificAttribute("inteligenciaArtificial", true);
                 maquinaDeCombate.addSpecificAttribute("manipulacaoRealidade", false);
@@ -455,7 +455,7 @@ public class UniversoMarvelPersonagens {
                 falcao.addSpecificAttribute("capacete", true);
                 falcao.addSpecificAttribute("telepatia", false);
                 falcao.addSpecificAttribute("telecinese", false);
-                falcao.addSpecificAttribute("voo", true);
+                falcao.addSpecificAttribute("voar", true);
                 falcao.addSpecificAttribute("absorverEnergia", false);
                 falcao.addSpecificAttribute("inteligenciaArtificial", true);
                 falcao.addSpecificAttribute("manipulacaoRealidade", false);
@@ -492,7 +492,7 @@ public class UniversoMarvelPersonagens {
                 soldadoInvernal.addSpecificAttribute("capacete", false);
                 soldadoInvernal.addSpecificAttribute("telepatia", false);
                 soldadoInvernal.addSpecificAttribute("telecinese", false);
-                soldadoInvernal.addSpecificAttribute("voo", false);
+                soldadoInvernal.addSpecificAttribute("voar", false);
                 soldadoInvernal.addSpecificAttribute("absorverEnergia", false);
                 soldadoInvernal.addSpecificAttribute("inteligenciaArtificial", false);
                 soldadoInvernal.addSpecificAttribute("manipulacaoRealidade", false);
@@ -528,7 +528,7 @@ public class UniversoMarvelPersonagens {
                 homemFormiga.addSpecificAttribute("capacete", true);
                 homemFormiga.addSpecificAttribute("telepatia", false);
                 homemFormiga.addSpecificAttribute("telecinese", false);
-                homemFormiga.addSpecificAttribute("voo", false);
+                homemFormiga.addSpecificAttribute("voar", false);
                 homemFormiga.addSpecificAttribute("absorverEnergia", false);
                 homemFormiga.addSpecificAttribute("inteligenciaArtificial", true);
                 homemFormiga.addSpecificAttribute("manipulacaoRealidade", false);
@@ -548,7 +548,7 @@ public class UniversoMarvelPersonagens {
                 homemFormiga.addSpecificAttribute("Maguinetismo", false);
 
                 Features vespa = new Features("Vespa", "feminino", false, true, "", "heroi",
-                                "coadjuvante", true, true, "mudança de tamanho e voo",
+                                "coadjuvante", true, true, "mudança de tamanho e voar",
                                 true, true, true,
                                 false, "humano", false, false,
                                 false, false, "");
@@ -563,7 +563,7 @@ public class UniversoMarvelPersonagens {
                 vespa.addSpecificAttribute("capacete", true);
                 vespa.addSpecificAttribute("telepatia", false);
                 vespa.addSpecificAttribute("telecinese", false);
-                vespa.addSpecificAttribute("voo", true);
+                vespa.addSpecificAttribute("voar", true);
                 vespa.addSpecificAttribute("absorverEnergia", false);
                 vespa.addSpecificAttribute("inteligenciaArtificial", true);
                 vespa.addSpecificAttribute("manipulacaoRealidade", false);
@@ -600,7 +600,7 @@ public class UniversoMarvelPersonagens {
                 doutorEstranho.addSpecificAttribute("capacete", false);
                 doutorEstranho.addSpecificAttribute("telepatia", true);
                 doutorEstranho.addSpecificAttribute("telecinese", true);
-                doutorEstranho.addSpecificAttribute("voo", true);
+                doutorEstranho.addSpecificAttribute("voar", true);
                 doutorEstranho.addSpecificAttribute("absorverEnergia", false);
                 doutorEstranho.addSpecificAttribute("inteligenciaArtificial", false);
                 doutorEstranho.addSpecificAttribute("manipulacaoRealidade", true);
@@ -636,7 +636,7 @@ public class UniversoMarvelPersonagens {
                 cavaleiroNegro.addSpecificAttribute("capacete", true);
                 cavaleiroNegro.addSpecificAttribute("telepatia", false);
                 cavaleiroNegro.addSpecificAttribute("telecinese", false);
-                cavaleiroNegro.addSpecificAttribute("voo", false);
+                cavaleiroNegro.addSpecificAttribute("voar", false);
                 cavaleiroNegro.addSpecificAttribute("absorverEnergia", false);
                 cavaleiroNegro.addSpecificAttribute("inteligenciaArtificial", false);
                 cavaleiroNegro.addSpecificAttribute("manipulacaoRealidade", false);
@@ -671,7 +671,7 @@ public class UniversoMarvelPersonagens {
                 sheHulk.addSpecificAttribute("capacete", false);
                 sheHulk.addSpecificAttribute("telepatia", false);
                 sheHulk.addSpecificAttribute("telecinese", false);
-                sheHulk.addSpecificAttribute("voo", false);
+                sheHulk.addSpecificAttribute("voar", false);
                 sheHulk.addSpecificAttribute("absorverEnergia", false);
                 sheHulk.addSpecificAttribute("inteligenciaArtificial", false);
                 sheHulk.addSpecificAttribute("manipulacaoRealidade", false);
@@ -707,7 +707,7 @@ public class UniversoMarvelPersonagens {
                 mercurio.addSpecificAttribute("capacete", false);
                 mercurio.addSpecificAttribute("telepatia", false);
                 mercurio.addSpecificAttribute("telecinese", false);
-                mercurio.addSpecificAttribute("voo", false);
+                mercurio.addSpecificAttribute("voar", false);
                 mercurio.addSpecificAttribute("absorverEnergia", false);
                 mercurio.addSpecificAttribute("inteligenciaArtificial", false);
                 mercurio.addSpecificAttribute("manipulacaoRealidade", false);
@@ -740,7 +740,7 @@ public class UniversoMarvelPersonagens {
                 ciclope.addSpecificAttribute("capacete", false);
                 ciclope.addSpecificAttribute("telepatia", false);
                 ciclope.addSpecificAttribute("telecinese", false);
-                ciclope.addSpecificAttribute("voo", false);
+                ciclope.addSpecificAttribute("voar", false);
                 ciclope.addSpecificAttribute("absorverEnergia", true);
                 ciclope.addSpecificAttribute("inteligenciaArtificial", false);
                 ciclope.addSpecificAttribute("manipulacaoRealidade", false);
@@ -775,7 +775,7 @@ public class UniversoMarvelPersonagens {
                 jeanGrey.addSpecificAttribute("capacete", false);
                 jeanGrey.addSpecificAttribute("telepatia", true);
                 jeanGrey.addSpecificAttribute("telecinese", true);
-                jeanGrey.addSpecificAttribute("voo", true);
+                jeanGrey.addSpecificAttribute("voar", true);
                 jeanGrey.addSpecificAttribute("absorverEnergia", false);
                 jeanGrey.addSpecificAttribute("inteligenciaArtificial", false);
                 jeanGrey.addSpecificAttribute("manipulacaoRealidade", true);
@@ -810,7 +810,7 @@ public class UniversoMarvelPersonagens {
                 wolverine.addSpecificAttribute("capacete", false);
                 wolverine.addSpecificAttribute("telepatia", false);
                 wolverine.addSpecificAttribute("telecinese", false);
-                wolverine.addSpecificAttribute("voo", false);
+                wolverine.addSpecificAttribute("voar", false);
                 wolverine.addSpecificAttribute("absorverEnergia", false);
                 wolverine.addSpecificAttribute("inteligenciaArtificial", false);
                 wolverine.addSpecificAttribute("manipulacaoRealidade", false);
@@ -846,7 +846,7 @@ public class UniversoMarvelPersonagens {
                 tempestade.addSpecificAttribute("capacete", false);
                 tempestade.addSpecificAttribute("telepatia", false);
                 tempestade.addSpecificAttribute("telecinese", false);
-                tempestade.addSpecificAttribute("voo", true);
+                tempestade.addSpecificAttribute("voar", true);
                 tempestade.addSpecificAttribute("absorverEnergia", false);
                 tempestade.addSpecificAttribute("inteligenciaArtificial", false);
                 tempestade.addSpecificAttribute("manipulacaoRealidade", false);
@@ -881,7 +881,7 @@ public class UniversoMarvelPersonagens {
                 fera.addSpecificAttribute("capacete", false);
                 fera.addSpecificAttribute("telepatia", false);
                 fera.addSpecificAttribute("telecinese", false);
-                fera.addSpecificAttribute("voo", false);
+                fera.addSpecificAttribute("voar", false);
                 fera.addSpecificAttribute("absorverEnergia", false);
                 fera.addSpecificAttribute("inteligenciaArtificial", false);
                 fera.addSpecificAttribute("manipulacaoRealidade", false);
@@ -917,7 +917,7 @@ public class UniversoMarvelPersonagens {
                 magneto.addSpecificAttribute("capacete", true);
                 magneto.addSpecificAttribute("telepatia", false);
                 magneto.addSpecificAttribute("telecinese", false);
-                magneto.addSpecificAttribute("voo", true);
+                magneto.addSpecificAttribute("voar", true);
                 magneto.addSpecificAttribute("absorverEnergia", false);
                 magneto.addSpecificAttribute("inteligenciaArtificial", false);
                 magneto.addSpecificAttribute("manipulacaoRealidade", false);
@@ -955,7 +955,7 @@ public class UniversoMarvelPersonagens {
                 vampira.addSpecificAttribute("capacete", false);
                 vampira.addSpecificAttribute("telepatia", false);
                 vampira.addSpecificAttribute("telecinese", false);
-                vampira.addSpecificAttribute("voo", true);
+                vampira.addSpecificAttribute("voar", true);
                 vampira.addSpecificAttribute("absorverEnergia", true);
                 vampira.addSpecificAttribute("inteligenciaArtificial", false);
                 vampira.addSpecificAttribute("manipulacaoRealidade", false);
@@ -990,7 +990,7 @@ public class UniversoMarvelPersonagens {
                 gambit.addSpecificAttribute("capacete", false);
                 gambit.addSpecificAttribute("telepatia", false);
                 gambit.addSpecificAttribute("telecinese", false);
-                gambit.addSpecificAttribute("voo", false);
+                gambit.addSpecificAttribute("voar", false);
                 gambit.addSpecificAttribute("absorverEnergia", true);
                 gambit.addSpecificAttribute("inteligenciaArtificial", false);
                 gambit.addSpecificAttribute("manipulacaoRealidade", false);
@@ -1025,7 +1025,7 @@ public class UniversoMarvelPersonagens {
                 noturno.addSpecificAttribute("capacete", false);
                 noturno.addSpecificAttribute("telepatia", false);
                 noturno.addSpecificAttribute("telecinese", false);
-                noturno.addSpecificAttribute("voo", false);
+                noturno.addSpecificAttribute("voar", false);
                 noturno.addSpecificAttribute("absorverEnergia", false);
                 noturno.addSpecificAttribute("inteligenciaArtificial", false);
                 noturno.addSpecificAttribute("manipulacaoRealidade", false);
@@ -1061,7 +1061,7 @@ public class UniversoMarvelPersonagens {
                 colossus.addSpecificAttribute("capacete", false);
                 colossus.addSpecificAttribute("telepatia", false);
                 colossus.addSpecificAttribute("telecinese", false);
-                colossus.addSpecificAttribute("voo", false);
+                colossus.addSpecificAttribute("voar", false);
                 colossus.addSpecificAttribute("absorverEnergia", false);
                 colossus.addSpecificAttribute("inteligenciaArtificial", false);
                 colossus.addSpecificAttribute("manipulacaoRealidade", false);
@@ -1096,7 +1096,7 @@ public class UniversoMarvelPersonagens {
                 kittyPryde.addSpecificAttribute("capacete", false);
                 kittyPryde.addSpecificAttribute("telepatia", false);
                 kittyPryde.addSpecificAttribute("telecinese", false);
-                kittyPryde.addSpecificAttribute("voo", false);
+                kittyPryde.addSpecificAttribute("voar", false);
                 kittyPryde.addSpecificAttribute("absorverEnergia", false);
                 kittyPryde.addSpecificAttribute("inteligenciaArtificial", false);
                 kittyPryde.addSpecificAttribute("manipulacaoRealidade", false);
@@ -1132,7 +1132,7 @@ public class UniversoMarvelPersonagens {
                 homemDeGelo.addSpecificAttribute("capacete", false);
                 homemDeGelo.addSpecificAttribute("telepatia", false);
                 homemDeGelo.addSpecificAttribute("telecinese", false);
-                homemDeGelo.addSpecificAttribute("voo", false);
+                homemDeGelo.addSpecificAttribute("voar", false);
                 homemDeGelo.addSpecificAttribute("absorverEnergia", false);
                 homemDeGelo.addSpecificAttribute("inteligenciaArtificial", false);
                 homemDeGelo.addSpecificAttribute("manipulacaoRealidade", false);
@@ -1153,7 +1153,7 @@ public class UniversoMarvelPersonagens {
 
                 Features angel = new Features("Warren Worthington III (Anjo)", "masculino", false, false, "",
                                 "heroi",
-                                "coadjuvante", true, true, "voo com asas",
+                                "coadjuvante", true, true, "voar com asas",
                                 true, false, false,
                                 false, "mutante", false, false,
                                 false, false, "");
@@ -1168,7 +1168,7 @@ public class UniversoMarvelPersonagens {
                 angel.addSpecificAttribute("capacete", false);
                 angel.addSpecificAttribute("telepatia", false);
                 angel.addSpecificAttribute("telecinese", false);
-                angel.addSpecificAttribute("voo", true);
+                angel.addSpecificAttribute("voar", true);
                 angel.addSpecificAttribute("absorverEnergia", false);
                 angel.addSpecificAttribute("inteligenciaArtificial", false);
                 angel.addSpecificAttribute("manipulacaoRealidade", false);
@@ -1203,7 +1203,7 @@ public class UniversoMarvelPersonagens {
                 professorX.addSpecificAttribute("capacete", true);
                 professorX.addSpecificAttribute("telepatia", true);
                 professorX.addSpecificAttribute("telecinese", false);
-                professorX.addSpecificAttribute("voo", false);
+                professorX.addSpecificAttribute("voar", false);
                 professorX.addSpecificAttribute("absorverEnergia", false);
                 professorX.addSpecificAttribute("inteligenciaArtificial", false);
                 professorX.addSpecificAttribute("manipulacaoRealidade", false);
@@ -1238,7 +1238,7 @@ public class UniversoMarvelPersonagens {
                 jubilee.addSpecificAttribute("capacete", false);
                 jubilee.addSpecificAttribute("telepatia", false);
                 jubilee.addSpecificAttribute("telecinese", false);
-                jubilee.addSpecificAttribute("voo", false);
+                jubilee.addSpecificAttribute("voar", false);
                 jubilee.addSpecificAttribute("absorverEnergia", true);
                 jubilee.addSpecificAttribute("inteligenciaArtificial", false);
                 jubilee.addSpecificAttribute("manipulacaoRealidade", false);
@@ -1274,7 +1274,7 @@ public class UniversoMarvelPersonagens {
                 psylocke.addSpecificAttribute("capacete", false);
                 psylocke.addSpecificAttribute("telepatia", true);
                 psylocke.addSpecificAttribute("telecinese", true);
-                psylocke.addSpecificAttribute("voo", false);
+                psylocke.addSpecificAttribute("voar", false);
                 psylocke.addSpecificAttribute("absorverEnergia", false);
                 psylocke.addSpecificAttribute("inteligenciaArtificial", false);
                 psylocke.addSpecificAttribute("manipulacaoRealidade", false);
@@ -1309,7 +1309,7 @@ public class UniversoMarvelPersonagens {
                 deadpool.addSpecificAttribute("capacete", false);
                 deadpool.addSpecificAttribute("telepatia", false);
                 deadpool.addSpecificAttribute("telecinese", false);
-                deadpool.addSpecificAttribute("voo", false);
+                deadpool.addSpecificAttribute("voar", false);
                 deadpool.addSpecificAttribute("absorverEnergia", false);
                 deadpool.addSpecificAttribute("inteligenciaArtificial", false);
                 deadpool.addSpecificAttribute("manipulacaoRealidade", false);
@@ -1344,7 +1344,7 @@ public class UniversoMarvelPersonagens {
                 x23.addSpecificAttribute("capacete", false);
                 x23.addSpecificAttribute("telepatia", false);
                 x23.addSpecificAttribute("telecinese", false);
-                x23.addSpecificAttribute("voo", false);
+                x23.addSpecificAttribute("voar", false);
                 x23.addSpecificAttribute("absorverEnergia", false);
                 x23.addSpecificAttribute("inteligenciaArtificial", false);
                 x23.addSpecificAttribute("manipulacaoRealidade", false);
@@ -1380,7 +1380,7 @@ public class UniversoMarvelPersonagens {
                 emmaFrost.addSpecificAttribute("capacete", false);
                 emmaFrost.addSpecificAttribute("telepatia", true);
                 emmaFrost.addSpecificAttribute("telecinese", false);
-                emmaFrost.addSpecificAttribute("voo", false);
+                emmaFrost.addSpecificAttribute("voar", false);
                 emmaFrost.addSpecificAttribute("absorverEnergia", false);
                 emmaFrost.addSpecificAttribute("inteligenciaArtificial", false);
                 emmaFrost.addSpecificAttribute("manipulacaoRealidade", false);
@@ -1415,7 +1415,7 @@ public class UniversoMarvelPersonagens {
                 daken.addSpecificAttribute("capacete", false);
                 daken.addSpecificAttribute("telepatia", false);
                 daken.addSpecificAttribute("telecinese", false);
-                daken.addSpecificAttribute("voo", false);
+                daken.addSpecificAttribute("voar", false);
                 daken.addSpecificAttribute("absorverEnergia", false);
                 daken.addSpecificAttribute("inteligenciaArtificial", false);
                 daken.addSpecificAttribute("manipulacaoRealidade", false);
@@ -1451,7 +1451,7 @@ public class UniversoMarvelPersonagens {
                 havok.addSpecificAttribute("capacete", true);
                 havok.addSpecificAttribute("telepatia", false);
                 havok.addSpecificAttribute("telecinese", false);
-                havok.addSpecificAttribute("voo", false);
+                havok.addSpecificAttribute("voar", false);
                 havok.addSpecificAttribute("absorverEnergia", true);
                 havok.addSpecificAttribute("inteligenciaArtificial", false);
                 havok.addSpecificAttribute("manipulacaoRealidade", false);
@@ -1470,7 +1470,7 @@ public class UniversoMarvelPersonagens {
                 havok.addSpecificAttribute("fazerFeitico", false);
                 havok.addSpecificAttribute("Maguinetismo", false);
 
-                Features polaris = new Features("Lorna Dane", "feminino", false, false, "", "heroi",
+                Features polaris = new Features("polaris", "feminino", false, false, "", "heroi",
                                 "coadjuvante", false, true, "controle do magnetismo",
                                 true, false, true,
                                 false, "mutante", false, false,
@@ -1486,7 +1486,7 @@ public class UniversoMarvelPersonagens {
                 polaris.addSpecificAttribute("capacete", false);
                 polaris.addSpecificAttribute("telepatia", false);
                 polaris.addSpecificAttribute("telecinese", false);
-                polaris.addSpecificAttribute("voo", true);
+                polaris.addSpecificAttribute("voar", true);
                 polaris.addSpecificAttribute("absorverEnergia", false);
                 polaris.addSpecificAttribute("inteligenciaArtificial", false);
                 polaris.addSpecificAttribute("manipulacaoRealidade", false);
@@ -1521,7 +1521,7 @@ public class UniversoMarvelPersonagens {
                 bishop.addSpecificAttribute("capacete", false);
                 bishop.addSpecificAttribute("telepatia", false);
                 bishop.addSpecificAttribute("telecinese", false);
-                bishop.addSpecificAttribute("voo", false);
+                bishop.addSpecificAttribute("voar", false);
                 bishop.addSpecificAttribute("absorverEnergia", true);
                 bishop.addSpecificAttribute("inteligenciaArtificial", false);
                 bishop.addSpecificAttribute("manipulacaoRealidade", false);
@@ -1556,7 +1556,7 @@ public class UniversoMarvelPersonagens {
                 forge.addSpecificAttribute("capacete", false);
                 forge.addSpecificAttribute("telepatia", false);
                 forge.addSpecificAttribute("telecinese", false);
-                forge.addSpecificAttribute("voo", false);
+                forge.addSpecificAttribute("voar", false);
                 forge.addSpecificAttribute("absorverEnergia", false);
                 forge.addSpecificAttribute("inteligenciaArtificial", true);
                 forge.addSpecificAttribute("manipulacaoRealidade", false);
@@ -1592,7 +1592,7 @@ public class UniversoMarvelPersonagens {
                 banshee.addSpecificAttribute("capacete", false);
                 banshee.addSpecificAttribute("telepatia", false);
                 banshee.addSpecificAttribute("telecinese", false);
-                banshee.addSpecificAttribute("voo", true);
+                banshee.addSpecificAttribute("voar", true);
                 banshee.addSpecificAttribute("absorverEnergia", false);
                 banshee.addSpecificAttribute("inteligenciaArtificial", false);
                 banshee.addSpecificAttribute("manipulacaoRealidade", false);
@@ -1628,7 +1628,7 @@ public class UniversoMarvelPersonagens {
                 cable.addSpecificAttribute("capacete", false);
                 cable.addSpecificAttribute("telepatia", true);
                 cable.addSpecificAttribute("telecinese", true);
-                cable.addSpecificAttribute("voo", false);
+                cable.addSpecificAttribute("voar", false);
                 cable.addSpecificAttribute("absorverEnergia", false);
                 cable.addSpecificAttribute("inteligenciaArtificial", true);
                 cable.addSpecificAttribute("manipulacaoRealidade", false);
@@ -1664,7 +1664,7 @@ public class UniversoMarvelPersonagens {
                 senhorFantastico.addSpecificAttribute("capacete", false);
                 senhorFantastico.addSpecificAttribute("telepatia", false);
                 senhorFantastico.addSpecificAttribute("telecinese", false);
-                senhorFantastico.addSpecificAttribute("voo", false);
+                senhorFantastico.addSpecificAttribute("voar", false);
                 senhorFantastico.addSpecificAttribute("absorverEnergia", false);
                 senhorFantastico.addSpecificAttribute("inteligenciaArtificial", true);
                 senhorFantastico.addSpecificAttribute("manipulacaoRealidade", false);
@@ -1700,7 +1700,7 @@ public class UniversoMarvelPersonagens {
                 mulherInvisivel.addSpecificAttribute("capacete", false);
                 mulherInvisivel.addSpecificAttribute("telepatia", false);
                 mulherInvisivel.addSpecificAttribute("telecinese", true);
-                mulherInvisivel.addSpecificAttribute("voo", false);
+                mulherInvisivel.addSpecificAttribute("voar", false);
                 mulherInvisivel.addSpecificAttribute("absorverEnergia", false);
                 mulherInvisivel.addSpecificAttribute("inteligenciaArtificial", false);
                 mulherInvisivel.addSpecificAttribute("manipulacaoRealidade", false);
@@ -1735,7 +1735,7 @@ public class UniversoMarvelPersonagens {
                 tochaHumana.addSpecificAttribute("capacete", false);
                 tochaHumana.addSpecificAttribute("telepatia", false);
                 tochaHumana.addSpecificAttribute("telecinese", false);
-                tochaHumana.addSpecificAttribute("voo", true);
+                tochaHumana.addSpecificAttribute("voar", true);
                 tochaHumana.addSpecificAttribute("absorverEnergia", true);
                 tochaHumana.addSpecificAttribute("inteligenciaArtificial", false);
                 tochaHumana.addSpecificAttribute("manipulacaoRealidade", false);
@@ -1770,7 +1770,7 @@ public class UniversoMarvelPersonagens {
                 coisa.addSpecificAttribute("capacete", false);
                 coisa.addSpecificAttribute("telepatia", false);
                 coisa.addSpecificAttribute("telecinese", false);
-                coisa.addSpecificAttribute("voo", false);
+                coisa.addSpecificAttribute("voar", false);
                 coisa.addSpecificAttribute("absorverEnergia", false);
                 coisa.addSpecificAttribute("inteligenciaArtificial", false);
                 coisa.addSpecificAttribute("manipulacaoRealidade", false);
@@ -1805,7 +1805,7 @@ public class UniversoMarvelPersonagens {
                 doutorDestino.addSpecificAttribute("capacete", true);
                 doutorDestino.addSpecificAttribute("telepatia", false);
                 doutorDestino.addSpecificAttribute("telecinese", false);
-                doutorDestino.addSpecificAttribute("voo", true);
+                doutorDestino.addSpecificAttribute("voar", true);
                 doutorDestino.addSpecificAttribute("absorverEnergia", true);
                 doutorDestino.addSpecificAttribute("inteligenciaArtificial", true);
                 doutorDestino.addSpecificAttribute("manipulacaoRealidade", false);
@@ -1844,7 +1844,7 @@ public class UniversoMarvelPersonagens {
                 surfistaPrateado.addSpecificAttribute("capacete", false);
                 surfistaPrateado.addSpecificAttribute("telepatia", true);
                 surfistaPrateado.addSpecificAttribute("telecinese", true);
-                surfistaPrateado.addSpecificAttribute("voo", true);
+                surfistaPrateado.addSpecificAttribute("voar", true);
                 surfistaPrateado.addSpecificAttribute("absorverEnergia", true);
                 surfistaPrateado.addSpecificAttribute("inteligenciaArtificial", false);
                 surfistaPrateado.addSpecificAttribute("manipulacaoRealidade", true);
@@ -1879,7 +1879,7 @@ public class UniversoMarvelPersonagens {
                 galactus.addSpecificAttribute("capacete", true);
                 galactus.addSpecificAttribute("telepatia", true);
                 galactus.addSpecificAttribute("telecinese", true);
-                galactus.addSpecificAttribute("voo", true);
+                galactus.addSpecificAttribute("voar", true);
                 galactus.addSpecificAttribute("absorverEnergia", true);
                 galactus.addSpecificAttribute("inteligenciaArtificial", false);
                 galactus.addSpecificAttribute("manipulacaoRealidade", true);
@@ -1914,7 +1914,7 @@ public class UniversoMarvelPersonagens {
                 namor.addSpecificAttribute("capacete", false);
                 namor.addSpecificAttribute("telepatia", false);
                 namor.addSpecificAttribute("telecinese", false);
-                namor.addSpecificAttribute("voo", true);
+                namor.addSpecificAttribute("voar", true);
                 namor.addSpecificAttribute("absorverEnergia", false);
                 namor.addSpecificAttribute("inteligenciaArtificial", false);
                 namor.addSpecificAttribute("manipulacaoRealidade", false);
@@ -1949,7 +1949,7 @@ public class UniversoMarvelPersonagens {
                 raionegro.addSpecificAttribute("capacete", false);
                 raionegro.addSpecificAttribute("telepatia", false);
                 raionegro.addSpecificAttribute("telecinese", false);
-                raionegro.addSpecificAttribute("voo", true);
+                raionegro.addSpecificAttribute("voar", true);
                 raionegro.addSpecificAttribute("absorverEnergia", true);
                 raionegro.addSpecificAttribute("inteligenciaArtificial", false);
                 raionegro.addSpecificAttribute("manipulacaoRealidade", false);
@@ -1984,7 +1984,7 @@ public class UniversoMarvelPersonagens {
                 thanos.addSpecificAttribute("capacete", true);
                 thanos.addSpecificAttribute("telepatia", false);
                 thanos.addSpecificAttribute("telecinese", true);
-                thanos.addSpecificAttribute("voo", true);
+                thanos.addSpecificAttribute("voar", true);
                 thanos.addSpecificAttribute("absorverEnergia", true);
                 thanos.addSpecificAttribute("inteligenciaArtificial", false);
                 thanos.addSpecificAttribute("manipulacaoRealidade", true);
@@ -2019,7 +2019,7 @@ public class UniversoMarvelPersonagens {
                 ultron.addSpecificAttribute("capacete", false);
                 ultron.addSpecificAttribute("telepatia", false);
                 ultron.addSpecificAttribute("telecinese", false);
-                ultron.addSpecificAttribute("voo", true);
+                ultron.addSpecificAttribute("voar", true);
                 ultron.addSpecificAttribute("absorverEnergia", true);
                 ultron.addSpecificAttribute("inteligenciaArtificial", true);
                 ultron.addSpecificAttribute("manipulacaoRealidade", false);
@@ -2054,7 +2054,7 @@ public class UniversoMarvelPersonagens {
                 loki.addSpecificAttribute("capacete", true);
                 loki.addSpecificAttribute("telepatia", false);
                 loki.addSpecificAttribute("telecinese", false);
-                loki.addSpecificAttribute("voo", false);
+                loki.addSpecificAttribute("voar", false);
                 loki.addSpecificAttribute("absorverEnergia", false);
                 loki.addSpecificAttribute("inteligenciaArtificial", false);
                 loki.addSpecificAttribute("manipulacaoRealidade", true);
@@ -2089,7 +2089,7 @@ public class UniversoMarvelPersonagens {
                 venom.addSpecificAttribute("capacete", false);
                 venom.addSpecificAttribute("telepatia", false);
                 venom.addSpecificAttribute("telecinese", false);
-                venom.addSpecificAttribute("voo", false);
+                venom.addSpecificAttribute("voar", false);
                 venom.addSpecificAttribute("absorverEnergia", false);
                 venom.addSpecificAttribute("inteligenciaArtificial", false);
                 venom.addSpecificAttribute("manipulacaoRealidade", false);
@@ -2124,7 +2124,7 @@ public class UniversoMarvelPersonagens {
                 duendeverde.addSpecificAttribute("capacete", true);
                 duendeverde.addSpecificAttribute("telepatia", false);
                 duendeverde.addSpecificAttribute("telecinese", false);
-                duendeverde.addSpecificAttribute("voo", true);
+                duendeverde.addSpecificAttribute("voar", true);
                 duendeverde.addSpecificAttribute("absorverEnergia", false);
                 duendeverde.addSpecificAttribute("inteligenciaArtificial", false);
                 duendeverde.addSpecificAttribute("manipulacaoRealidade", false);
@@ -2159,7 +2159,7 @@ public class UniversoMarvelPersonagens {
                 carnificina.addSpecificAttribute("capacete", false);
                 carnificina.addSpecificAttribute("telepatia", false);
                 carnificina.addSpecificAttribute("telecinese", false);
-                carnificina.addSpecificAttribute("voo", false);
+                carnificina.addSpecificAttribute("voar", false);
                 carnificina.addSpecificAttribute("absorverEnergia", false);
                 carnificina.addSpecificAttribute("inteligenciaArtificial", false);
                 carnificina.addSpecificAttribute("manipulacaoRealidade", false);

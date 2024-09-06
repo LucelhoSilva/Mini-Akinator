@@ -4,6 +4,7 @@ import java.util.List;
 // import src.characters.CavaleirosDoZodiacoCharacters;
 import src.characters.DragonBallCharacters;
 import src.characters.HarryPotterCharacters;
+import src.characters.UniversoDaDCPersonagens;
 // import src.characters.NarutoCharacters;
 // import src.characters.SoloLevelingCharacters;
 import src.characters.UniversoMarvelPersonagens;
@@ -35,5 +36,6 @@ public class Main {
     HarryPotterCharacters.adicionarPersonagens(listaPersonagens);
     // NarutoCharacters.adicionarPersonagens(listaPersonagens);
     UniversoMarvelPersonagens.adicionarPersonagens(listaPersonagens);
+    UniversoDaDCPersonagens.adicionarPersonagens(listaPersonagens);
   }
 }

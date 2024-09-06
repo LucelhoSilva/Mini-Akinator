@@ -1,220 +1,145 @@
 package src.controllers;
 
 import java.util.List;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 /**
- * Classe responsável por filtrar uma lista de personagens com base em uma
- * determinada característica.
+ * Classe responsável por filtrar personagens com base em suas características.
+ * Esta classe contém métodos estáticos para filtrar uma lista de personagens
+ * e verificar características específicas de um personagem.
  */
 public class Filter {
-    /**
-     * Filtra uma lista de personagens com base em uma determinada característica.
-     *
-     * Este método cria uma nova lista contendo apenas os personagens que possuem
-     * a característica.
-     * 
-     * @param listaPersonagens A lista de personagens a ser filtrada.
-     * @param Features         A característica a ser filtrada.
-     * @param valor            O valor da característica a ser filtrado.
-     * 
-     */
-    public static void filtrarPersonagens(List<Features> listaPersonagens, String Features, boolean valor) {
-        List<Features> personagensFiltrados = listaPersonagens.stream()
-                .filter(personagem -> getFeatures(personagem, Features) == valor)
-                .collect(Collectors.toList());
-        listaPersonagens.clear();
-        listaPersonagens.addAll(personagensFiltrados);
-    }
+  private static final Map<String, Function<Features, Boolean>> filter = new HashMap<>();
 
-    /**
-     * Verifica se um personagem possui uma determinada característica.
-     *
-     * Este método busca por uma característica específica no personagem e retorna
-     * true se a característica for encontrada, caso contrário, retorna false.
-     *
-     * @param personagem O personagem a ser analisado.
-     * @param Features   A característica a ser verificada (e.g., "masculino",
-     *                   "temFilho").
-     * @return `true` se o personagem possui a característica, `false` caso
-     *         contrário.
-     */
-    public static boolean getFeatures(Features personagem, String Features) {
-        switch (Features) {
-            ////////////////////////////////// Sexo /////////////////////////////
-            case "masculino":
-                return personagem.getSex().equals("masculino");
-            case "feminino":
-                return personagem.getSex().equals("feminino");
-            case "indefinido":
-                return personagem.getSex().equals("indefinido");
-            ////////////////////////////////// Filho /////////////////////////////
-            case "tem filho":
-                return personagem.hasChild();
-            ////////////////////////////////// Irmão /////////////////////////////
-            case "tem irmao":
-                return personagem.hasSibling();
-            ////////////////////////////////// Anime //////////////////////////////////
-            case "animeJapones":
-                return personagem.getAnime().equals("Japones");
-            case "animeChines":
-                return personagem.getAnime().equals("Chines");
-            case "Inglesa":
-                return personagem.getAnime().equals("Inglesa");
-            ////////////////////////////////// Figura //////////////////////////////////
-            case "heroi":
-                return personagem.getFigure().equals("heroi");
-            case "vilao":
-                return personagem.getFigure().equals("vilao");
-            case "anti-heroi":
-                return personagem.getFigure().equals("anti-heroi");
-            case "neutro":
-                return personagem.getFigure().equals("neutro");
-            ////////////////////////////////// Papel //////////////////////////////////
-            case "protagonista":
-                return personagem.getRole().equals("protagonista");
-            case "co-protagonista":
-                return personagem.getRole().equals("co-protagonista");
-            case "antagonista":
-                return personagem.getRole().equals("antagonista");
-            case "coadjuvante":
-                return personagem.getRole().equals("coadjuvante");
-            case "figurante":
-                return personagem.getRole().equals("figurante");
-            ////////////////////////////////// Transformação /////////////////////////////
-            case "tem transformacao":
-                return personagem.hasTransformation();
-            ////////////////////////////////// Poder //////////////////////////////////
-            case "tem poder":
-                return personagem.hasPower();
-            case "ki":
-                return personagem.getPower().equals("ki");
-            case "mana":
-                return personagem.getPower().equals("mana");
-            case "magia":
-                return personagem.getPower().equals("magia");
-            case "cosmo":
-                return personagem.getPower().equals("cosmo");
-            ////////////////////////////////// Carater //////////////////////////////////
-            case "carater":
-                return personagem.isGoodCharacter();
-            case "inteligente":
-                return personagem.isIntelligent();
-            case "estrategista":
-                return personagem.isStrategist();
-            case "manipulador":
-                return personagem.isManipulative();
-            case "safado":
-                return personagem.isMischievous();
-            case "arrogante":
-                return personagem.isArrogant();
-            ////////////////////////////////// Features fisica
-            ////////////////////////////////// //////////////////////////////////
-            case "cicatriz":
-                return personagem.hasScar();
-            ////////////////////////////////// Raça //////////////////////////////////
-            case "saiyajin":
-                return personagem.getRace().equals("saiyajin");
-            case "humano":
-                return personagem.getRace().equals("humana");
-            case "android":
-                return personagem.getRace().equals("android");
-            case "namekuseijin":
-                return personagem.getRace().equals("namekuseijin");
-            case "freeza":
-                return personagem.getRace().equals("freeza");
-            case "kaioshin":
-                return personagem.getRace().equals("kaioshin");
-            case "anjo":
-                return personagem.getRace().equals("anjo");
-            case "hakaishin":
-                return personagem.getRace().equals("hakaishin");
-            case "Majin":
-                return personagem.getRace().equals("majin");
-            case "alienigena":
-                return personagem.getRace().equals("alienigena");
-            ////////////////////////////////// Solo Leveling ////////////////////////////
-            case "lider":
-                return personagem.getSpecificBooleanAttribute("lider");
-            case "cacador":
-                return personagem.getSpecificStringAttribute("entidade").equals("caçador");
-            case "monarca":
-                return personagem.getSpecificStringAttribute("entidade").equals("monarca");
-            case "governante":
-                return personagem.getSpecificStringAttribute("entidade").equals("governante");
-            ////////////////////////////////// Rank ////////////////////////////
-            case "nacional":
-                return personagem.getSpecificStringAttribute("rank").equals("Nacional");
-            case "S":
-                return personagem.getSpecificStringAttribute("rank").equals("S");
-            case "A":
-                return personagem.getSpecificStringAttribute("rank").equals("A");
-            case "B":
-                return personagem.getSpecificStringAttribute("rank").equals("B");
-            case "C":
-                return personagem.getSpecificStringAttribute("rank").equals("C");
-            case "D":
-                return personagem.getSpecificStringAttribute("rank").equals("D");
-            case "E":
-                return personagem.getSpecificStringAttribute("rank").equals("E");
-            ////////////////////////////////// Elemento ////////////////////////////
-            case "vento":
-                return personagem.getSpecificStringAttribute("elemento").equals("vento");
-            case "luz":
-                return personagem.getSpecificStringAttribute("elemento").equals("luz");
-            case "trevas":
-                return personagem.getSpecificStringAttribute("elemento").equals("trevas");
-            case "agua":
-                return personagem.getSpecificStringAttribute("elemento").equals("agua");
-            case "fogo":
-                return personagem.getSpecificStringAttribute("elemento").equals("fogo");
-            ///////////////////////// Pode Invocar /////////////////
-            case "podeInvocar":
-                return personagem.getSpecificBooleanAttribute("podeInvocar");
-            ////////////////////////////////// Classe //////////////////////////////////
-            case "tudo":
-                return personagem.getSpecificStringAttribute("classe").equals("tudo");
-            case "espadachim":
-                return personagem.getSpecificStringAttribute("classe").equals("espadachim");
-            case "mago":
-                return personagem.getSpecificStringAttribute("classe").equals("mago");
-            case "lutador":
-                return personagem.getSpecificStringAttribute("classe").equals("lutador");
-            case "suporte":
-                return personagem.getSpecificStringAttribute("classe").equals("suporte");
-            case "arqueiro":
-                return personagem.getSpecificStringAttribute("classe").equals("arqueiro");
-            case "tank":
-                return personagem.getSpecificStringAttribute("classe").equals("tank");
+  static {
+    // Características gerais
+    filter.put("masculino", p -> p.getSex().equals("masculino"));
+    filter.put("feminino", p -> p.getSex().equals("feminino"));
+    filter.put("indefinido", p -> p.getSex().equals("indefinido"));
+    filter.put("tem filho", Features::hasChild);
+    filter.put("tem irmao", Features::hasSibling);
+    filter.put("animeJapones", p -> p.getAnime().equals("Japones"));
+    filter.put("animeChines", p -> p.getAnime().equals("Chines"));
+    filter.put("Inglesa", p -> p.getAnime().equals("Inglesa"));
+    filter.put("heroi", p -> p.getFigure().equals("heroi"));
+    filter.put("vilao", p -> p.getFigure().equals("vilao"));
+    filter.put("anti-heroi", p -> p.getFigure().equals("anti-heroi"));
+    filter.put("neutro", p -> p.getFigure().equals("neutro"));
+    filter.put("protagonista", p -> p.getRole().equals("protagonista"));
+    filter.put("co-protagonista", p -> p.getRole().equals("co-protagonista"));
+    filter.put("antagonista", p -> p.getRole().equals("antagonista"));
+    filter.put("coadjuvante", p -> p.getRole().equals("coadjuvante"));
+    filter.put("figurante", p -> p.getRole().equals("figurante"));
+    filter.put("tem transformacao", Features::hasTransformation);
+    filter.put("tem poder", Features::hasPower);
+    filter.put("ki", p -> p.getPower().equals("Ki"));
+    filter.put("mana", p -> p.getPower().equals("mana"));
+    filter.put("magia", p -> p.getPower().equals("magia"));
+    filter.put("cosmo", p -> p.getPower().equals("cosmo"));
+    filter.put("carater", Features::isGoodCharacter);
+    filter.put("inteligente", Features::isIntelligent);
+    filter.put("estrategista", Features::isStrategist);
+    filter.put("manipulador", Features::isManipulative);
+    filter.put("safado", Features::isMischievous);
+    filter.put("arrogante", Features::isArrogant);
+    filter.put("cicatriz", Features::hasScar);
+    filter.put("humano", p -> p.getRace().equals("humano"));
+    filter.put("saiyajin", p -> p.getRace().equals("saiyajin"));
+    filter.put("android", p -> p.getRace().equals("android"));
+    filter.put("namekuseijin", p -> p.getRace().equals("namekuseijin"));
+    filter.put("freeza", p -> p.getRace().equals("freeza"));
+    filter.put("kaioshin", p -> p.getRace().equals("kaioshin"));
+    filter.put("anjo", p -> p.getRace().equals("anjo"));
+    filter.put("hakaishin", p -> p.getRace().equals("hakaishin"));
+    filter.put("majin", p -> p.getRace().equals("majin"));
+    filter.put("gigante de geloigena", p -> p.getRace().equals("gigante de geloigena"));
 
-            ////////////////////////////////// Cavaleiros Do Zodiaco ///////////////////
-            case "elementoFogo":
-                return personagem.getSpecificStringAttribute("elemento").equals("fogo");
-            case "elementoTerra":
-                return personagem.getSpecificStringAttribute("elemento").equals("terra");
-            case "signoPegaso":
-                return personagem.getSpecificStringAttribute("signo").equals("pegaso");
-            case "signoDragao":
-                return personagem.getSpecificStringAttribute("signo").equals("dragao");
-            case "armaduraBronze":
-                return personagem.getSpecificStringAttribute("armadura").equals("bronze");
-            ////////////////////////////////// Harry Potter ///////////////////////////
-            case "HarryPotter":
-                return personagem.getSpecificBooleanAttribute("HarryPotter");
-            case "casaGrifinoria":
-                return personagem.getSpecificBooleanAttribute("casaGrifinoria");
-            case "casaCorvinal":
-                return personagem.getSpecificBooleanAttribute("casaCorvinal");
-            case "animalEstimacao":
-                return personagem.getSpecificBooleanAttribute("animalEstimacao");
-            case "ancestralSalazar":
-                return personagem.getSpecificBooleanAttribute("ancestralSalazar");
-            case "esteveNaCamaraSecreta":
-                return personagem.getSpecificBooleanAttribute("esteveNaCamaraSecreta");
-            case "paisTrouxas":
-                return personagem.getSpecificBooleanAttribute("paisTrouxas");
-            default:
-                return false;
-        }
-    }
+    // Características específicas do Universo de Harry Potter
+    filter.put("HarryPotter", p -> p.getSpecificBooleanAttribute("HarryPotter"));
+    filter.put("monitor", p -> p.getSpecificBooleanAttribute("monitor"));
+    filter.put("casaGrifinoria", p -> p.getSpecificBooleanAttribute("casaGrifinoria"));
+    filter.put("casaCorvinal", p -> p.getSpecificBooleanAttribute("casaCorvinal"));
+    filter.put("casaSonserina", p -> p.getSpecificBooleanAttribute("casaSonserina"));
+    filter.put("casaLufaLufa", p -> p.getSpecificBooleanAttribute("casaLufaLufa"));
+    filter.put("animalEstimacao", p -> p.getSpecificBooleanAttribute("animalEstimacao"));
+    filter.put("ancestralSalazar", p -> p.getSpecificBooleanAttribute("ancestralSalazar"));
+    filter.put("esteveNaCamaraSecreta", p -> p.getSpecificBooleanAttribute("esteveNaCamaraSecreta"));
+    filter.put("paisTrouxas", p -> p.getSpecificBooleanAttribute("paisTrouxas"));
+    filter.put("campeaoTribruxo", p -> p.getSpecificBooleanAttribute("campeaoTribruxo"));
+    filter.put("jogadorQuadribol", p -> p.getSpecificBooleanAttribute("jogadorQuadribol"));
+    filter.put("membroArmadaDumbledore", p -> p.getSpecificBooleanAttribute("membroArmadaDumbledore"));
+    filter.put("bruxa", p -> p.getClass().equals("bruxa"));
+    filter.put("bruxo", p -> p.getClass().equals("bruxo"));
+
+    // Características específicas do UniversoMarvelPersonagens
+    filter.put("UniversoMarvel", p -> p.getSpecificBooleanAttribute("UniversoMarvel"));
+    filter.put("vingador", p -> p.getSpecificBooleanAttribute("vingador"));
+    filter.put("traje", p -> p.getSpecificBooleanAttribute("traje"));
+    filter.put("wakanda", p -> p.getSpecificBooleanAttribute("wakanda"));
+    filter.put("xmen", p -> p.getSpecificBooleanAttribute("xmen"));
+    filter.put("regeneracao", p -> p.getSpecificBooleanAttribute("regeneracao"));
+    filter.put("controleMetal", p -> p.getSpecificBooleanAttribute("controleMetal"));
+    filter.put("capacete", p -> p.getSpecificBooleanAttribute("capacete"));
+    filter.put("telepatia", p -> p.getSpecificBooleanAttribute("telepatia"));
+    filter.put("telecinese", p -> p.getSpecificBooleanAttribute("telecinese"));
+    filter.put("voar", p -> p.getSpecificBooleanAttribute("voar"));
+    filter.put("absorverEnergia", p -> p.getSpecificBooleanAttribute("absorverEnergia"));
+    filter.put("inteligenciaArtificial", p -> p.getSpecificBooleanAttribute("inteligenciaArtificial"));
+    filter.put("manipulacaoRealidade", p -> p.getSpecificBooleanAttribute("manipulacaoRealidade"));
+    filter.put("agilidadeAprimorada", p -> p.getSpecificBooleanAttribute("agilidadeAprimorada"));
+    filter.put("realeza", p -> p.getSpecificBooleanAttribute("realeza"));
+    filter.put("raiosGama", p -> p.getSpecificBooleanAttribute("raiosGama"));
+    filter.put("shield", p -> p.getSpecificBooleanAttribute("shield"));
+    filter.put("treinamentoEspecial", p -> p.getSpecificBooleanAttribute("treinamentoEspecial"));
+    filter.put("superSoldado", p -> p.getSpecificBooleanAttribute("superSoldado"));
+    filter.put("bilionario", p -> p.getSpecificBooleanAttribute("bilionario"));
+    filter.put("patriota", p -> p.getSpecificBooleanAttribute("patriota"));
+    filter.put("combateCorpoACorpo", p -> p.getSpecificBooleanAttribute("combateCorpoACorpo"));
+    filter.put("artesMarciais", p -> p.getSpecificBooleanAttribute("artesMarciais"));
+    filter.put("forcaDivina", p -> p.getSpecificBooleanAttribute("forcaDivina"));
+    filter.put("manipulacaoDeEnergia", p -> p.getSpecificBooleanAttribute("manipulacaoDeEnergia"));
+    filter.put("fazerFeitico", p -> p.getSpecificBooleanAttribute("fazerFeitico"));
+    filter.put("Maguinetismo", p -> p.getSpecificBooleanAttribute("Maguinetismo"));
+    filter.put("asgardiano", p -> p.getRace().equals("asgardiano"));
+    filter.put("mutante", p -> p.getRace().equals("mutante"));
+    filter.put("humano mutado", p -> p.getRace().equals("humano mutado"));
+    filter.put("entidade cósmica", p -> p.getRace().equals("entidade cósmica"));
+    filter.put("inumano", p -> p.getRace().equals("inumano"));
+    filter.put("híbrido", p -> p.getRace().equals("híbrido"));
+    filter.put("eterno", p -> p.getRace().equals("eterno"));
+    filter.put("robô", p -> p.getRace().equals("robô"));
+    filter.put("gigante de gelo", p -> p.getRace().equals("gigante de gelo"));
+    filter.put("humano simbionte", p -> p.getRace().equals("humano simbionte"));
+
+  }
+
+  /**
+   * Filtra uma lista de personagens com base em uma característica específica.
+   * 
+   * @param characterList Lista de personagens a ser filtrada
+   * @param feature       Característica a ser verificada
+   * @param value         Valor booleano esperado para a característica
+   */
+  public static void filterCharacters(List<Features> characterList, String feature, boolean value) {
+    List<Features> filteredCharacters = characterList.stream()
+        .filter(character -> getFeature(character, feature) == value)
+        .collect(Collectors.toList());
+    characterList.clear();
+    characterList.addAll(filteredCharacters);
+  }
+
+  /**
+   * Verifica se um personagem possui uma característica específica.
+   * 
+   * @param character Personagem a ser verificado
+   * @param feature   Característica a ser verificada
+   * @return true se o personagem possui a característica, false caso contrário
+   */
+  public static boolean getFeature(Features character, String feature) {
+    Function<Features, Boolean> check = filter.get(feature);
+    return check != null ? check.apply(character) : false;
+  }
 }
