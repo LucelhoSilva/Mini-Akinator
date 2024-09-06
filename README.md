@@ -83,9 +83,9 @@ Contribuições são muito bem-vindas! Se você tem ideias para melhorar o jogo,
 
 ## Contato e Suporte
 
-- Desenvolvedor: [Lucelho Silva]
-- Email: [lucelhosilva@elystech.com.br]
-- GitHub: [https://github.com/lucelhosilva](https://github.com/lucelhosilva)
+- Desenvolvedor: Lucelho Silva
+- [Email](lucelhosilva@elystech.com.br)
+- [GitHub](https://github.com/lucelhosilva)
 
 Para reportar bugs ou sugerir novas funcionalidades, por favor, abra uma issue no GitHub do projeto.
 
